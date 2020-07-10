@@ -1,0 +1,290 @@
+﻿/* ФОРМУЛА УСПЕХА АДАПТИВНОГО ДИЗАЙНА
+цель \ контекст*100 = результат
+24px\1.5em=1,5em 
+*/
+
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+font: 100%/1.5em;
+color: 424242;
+background-color: 424242;
+}
+
+p{
+font: 14px/18px Arial;
+color: #2390ff;
+line-height: 1.5em;
+}
+
+a:link, a:hover, a:visited{
+text-decoration: none;
+color: #2390ff;
+}
+
+
+A.dot {
+    text-decoration: none; /* Убираем подчеркивание */
+    border-bottom: 1px dashed #2390ff; /* Добавляем свою линию */ 
+   }
+
+H2 {
+ color: navy;
+ font-size: 200%;
+ font-family: Arial, Verdana, sans-serif;
+ text-align: center;
+ color: 2390ff;
+}
+
+details {padding: 0 20px; cursor: pointer;}
+
+.top {margin: 10px;}
+
+.container{
+background: #fff;
+width: 1000px;
+margin: 0 auto;
+text-align: center;
+display: block;
+}
+
+
+.carcase{
+width: 300px;
+height: 200px;
+border: 2px solid #2390ff; /*CornflowerBlue*/
+/* Для хороших браузеров */
+  -moz-border-radius: 10px; /* Firefox */
+  -webkit-border-radius: 10px; /* Safari, Chrome */
+  -khtml-border-radius: 10px; /* KHTML */
+  border-radius: 10px; /* CSS3 */
+  /* Для плохих IE */
+  behavior: url(border-radius.htc); /* учим IE border-radius */
+  margin-left: 15px;
+  margin-right: 15px
+}
+
+.link{
+text-decoration: none;
+color: #2390ff;
+}
+
+.about{
+width: 1000px;
+margin-top: 15px;
+text-align: justify;
+}
+.about p, b, li, ul{
+color: #000;
+font-size: 16px;
+font-family: myriad, arial, verdana; 
+padding: 0 20px;
+}
+
+.about ul, li{padding-top:10px; padding-bottom: 10px;}
+
+summary{font-size: 18px;}
+
+.footer{
+width: 90%;
+text-align: center;
+color: #424242;
+margin: 0 auto;
+margin-top: 20px;
+}
+
+.footer p{
+color: #000;
+font-size: 16px;
+font-family: myriad, arial, verdana;
+}
+
+.version{text-align: right; font-size: 12px !important; float: right;}
+
+.block_middle{
+text-align: center;
+width: 90%;
+}
+
+.mini{
+  width: 300px; 
+  text-align: center;
+  display: table-cell;
+  padding: 20px 0;
+}
+
+.mini b{color: #000080; font-size: 18px;}
+
+.back p{text-align: center; margin: 18px 0; font-size: 18px;}
+.rukovodstvo {line-height: 1.7em; }
+.rukovodstvo p{margin: 18px 0;}
+
+ol {
+    counter-reset:li; /* Инициализируем счетчик */
+    padding: 10px 0; /* Удаляем  установленное по умолчанию левое поле*/
+    list-style:none; /* Отменяем нумерацию установленную по умолчанию */
+  }
+  ol li {
+      position:relative; /* Создаем контекст для позиционирования элементов */
+      margin:0 0 6px 2em; /* Даем каждому элементу списка отступ слева, что бы освободить пространство для нумерации */
+      padding:4px 8px;
+      border-top:2px solid #666;
+      background:#f6f6f6;
+	  color: #000;
+      }
+  ol li:before {
+      content:counter(li); /* В качестве данных используем счетчик */
+      counter-increment:li; /* Увеличиваем значение счетчика на 1 */
+      /* Позиционируем и оформляем цифры */
+      position:absolute;
+      top:-2px;
+      left:-2em;
+      width:2em;
+      padding:4px 0;
+      border-top:2px solid #666;
+      color:#fff;
+      background:#666;
+      font-weight:bold;
+      font-family:"Helvetica Neue", Arial, sans-serif;
+      text-align:center;
+      }
+/* СТРУКТУРА */
+.strwrapper{
+width: 1080px;
+margin: 0 auto;
+padding: 5px;
+}
+
+.strblock p{
+border: 1px solid #000;
+}
+
+.str{
+margin: 0 auto;
+text-align: center;
+}
+.strcoll{
+width: 320px;
+height: auto;
+float: left;
+border: 1px solid #000;
+}
+
+.bordertd {font-weight: bold; border: 1px solid #000;}
+.bordertd p{font-weight: bold; padding: 5px;}
+.otdelenia {float: left; border:1px solid #000; margin-top: 0; font-size: 18px; margin: 0; padding: 5px;}
+/* СТРУКТУРА */
+
+/* logo */
+.logo {text-align: left; font-size: 12px !important; float: right;}
+/* logo */
+
+.normbase {font-size: 14px/18px;}
+.normbase a{color: #0062C5;}
+
+.mero{
+ width: 185px;
+padding-left: 190px; 
+ display: inline-block;
+  }
+ .mero p{
+ font-size: 1.5em;
+ border: 3px solid #000;
+ padding: 5px;
+ background-color: #FFf;
+ text-indent: 0;
+ text-align: center;
+ }
+ 
+.downmenu {z-index: 1000; background-color: #fff;}
+.downmenu img{z-index: 1000; background-color: #fff; position: fixed; bottom: 0%; right: 0%;}
+.arrowdownup {z-index: 1000; background-color: #fff;}
+.arrowdownup img{z-index: 1000; background-color: #fff; position: fixed; bottom: 100px; right: 0%;}
+
+.sub-menu 
+{ 
+   display: none; 
+   
+} 
+.main-item:focus ~ .sub-menu, 
+.main-item:active ~ .sub-menu, 
+.sub-menu:hover 
+{ 
+   display: block; 
+  
+}
+summary::-webkit-details-marker {
+    color: #fff;
+    background-color: fff;
+	opacity: 0.1;
+}
+
+/* МОДАЛЬНОЕ ОКНО С ЗАТЕМНЕНИЕМ */
+/* слой затемнения */
+.dm-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: none;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+/* активируем слой затемнения и модальное окно */
+.dm-overlay:target {
+    display: block;
+/* анимация и время задержки */
+    -webkit-animation: fade .6s;
+    -moz-animation: fade .6s;
+    animation: fade .6s;
+}
+/* блочная таблица */
+.dm-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+/* ячейка блочной таблицы */
+.dm-cell {
+    display: table-cell;
+    padding: 0 1em;
+    vertical-align: bottom;
+    text-align: center;
+}
+/* модальный блок */
+.dm-modal {
+    display: inline-block;
+    padding: 20px;
+/* максимально возможная ширина */
+    max-width: 50em;
+    background: #fff;
+/* внешняя тень блока */
+    -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    color: #cfd8dc;
+    text-align: left;
+/* анимация и время задержки */
+    -webkit-animation: fade .8s;
+    -moz-animation: fade .8s;
+    animation: fade .8s;
+}
+/* анимация при появлении затемнения и блоков с содержанием */
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 } 
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+/* МОДАЛЬНОЕ ОКНО С ЗАТЕМНЕНИЕМ */
